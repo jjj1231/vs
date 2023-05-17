@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이름 2자 이상인지 검사</title>
+</head>
+
+<body>
+    <label>User name<input type="text"></label>
+    <em class="message"></em>
+
+    <script>
+        const input = document.querySelector('input[type=text]');
+        const msg = document.querySelector('.message');
+        console.log(input);
+        console.log(msg);
+
+        //input에 적은 값이 2자 이상이 아니면 경고 메시지 (em) 띄워주기
+        input.addEventListener('blur', function () {
+            if (input.value.length < 2) {
+                msg.innerHTML = '이름은 2자 이상이어야 합니다.';
+            } else {
+                msg.innerHTML = '';
+            }
+
+        })
+    </script>
+
+</body>
+
+</html>

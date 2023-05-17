@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    border: 1px solid #ccc;
+    padding: 2opx;
+    border-radius: 14px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+form {
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+
+#container div {
+    margin: 10px
+}

@@ -1,0 +1,50 @@
+/*1. `<body>` css 1. flex-item의 container가 될 수 있게 지정 
+2. items들 세로 기준으로 중앙 정렬 
+3. 화면의 전체 높이 사용할 수 있게 높이 값 지정 
+4. 배경색은 #295500 
+5. 만약 넘어가는 부분이 있다면 가리도록 표시*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* 세로 기준으로 중앙 정렬 */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 창을 기준으로 높이가 전체 차지 */
+    background-color: #295500;
+    overflow: hidden;
+    /* 넘어가는 부분이 있다면 가리도록 표시 */
+}
+
+
+/* 2. `#result` 
+1. 폰트 색은 #fffafa 
+2. 안쪽 여백 전체로 20px 지정 */
+
+#result {
+    color: #fffafa;
+    padding: 20px;
+}
+
+/* 3. `.quote` 
+1. 폰트 "Georgia",serif; 지정 
+2. 폰트 사이즈 루트를 기준으로 2.5배 지정 
+3. 바깥 여백 하단 20px 지정 */
+
+.quote {
+    font-family: "Georgia", serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* 4. `.author` 
+1. 폰트 사이즈 루트를 기준으로 1.5배 지정 
+2. 바깥 여백 왼쪽 루트를 기준으로 1배 지정 
+3. 폰트 스타일 이탤릭체로 변경 */
+
+.author {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-style: italic;
+}

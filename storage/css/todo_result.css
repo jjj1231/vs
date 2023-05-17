@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+}
+
+header {
+    font-size: 1.5em;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form label {
+    display: none;
+
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo_list {
+    min-width: 30%;
+    list-style: none;
+}
+
+/* todo 항목 */
+.todo {
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    /* `.todo` 안에 들어올 item들(각 목록, [완료], [삭제] 버튼) 교차축 기준으로 중앙,
+        주축 기준으로는 두 가지 끝단(시작점과 끝점)에 붙인 채로 사이 여백을 공평하게 배분. */
+    align-items: center;
+}
+
+.todo_content {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px dotted#ccc;
+}
+
+.todo button {
+    padding: 0.5rem;
+    margin-left: 0.2rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+}
+
+.completed {
+    color: #d8d8d8;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+/* <css>
+1. 전체 안쪽,바깥 여백 초기화 및 가로/세로 측정 border 기준으로 변경 
+2. `<body>` 부분의 최소 높이 - 화면 기준으로 100 
+3. `<header>` 폰트 사이즈 - 부모 기준으로 1.5배 지정 
+4. `<header>`,`<form>` 
+    1. 최소 높이 - 화면 기준으로 20 
+    2. 안에 들어올 item들 주축, 교차축 기준으로 중앙에 오도록 정렬 
+5. `<form>` 안의 `<label>` 태그 화면에 표시되지 않게 값 변경
+6. `<form>` 안의 `<input>,<button>` 태그 
+    1. 안쪽 여백 - 최상위 부모를 기준으로 0.5배 지정 
+    2. 폰트 사이즈 - 최상위 부모를 기준으로 1.5배 지정
+7. `#container` 안에 들어올 item들 주축, 교차축 기준으로 중앙에 오도록 정렬 
+8. `#todo_list` 
+    1. 최소 넓이 - 30% 
+    2. 목록 표시될 스타일 불릿 부분 지우기 
+9. `.todo` 
+    1. 바깥 여백 - 최상위 부모를 기준으로 0.5배 지정 
+    2. 폰트 사이즈 - 최상위 부모를 기준으로 1.2배 지정 
+    3. `.todo` 안에 들어올 item들(각 목록, [완료], [삭제] 버튼) 교차축 기준으로 중앙,
+주축 기준으로는 두 가지 끝단(시작점과 끝점)에 붙인 채로 사이 여백을 공평하게 배분. 
+10. `.todo_content` 
+    1. 안쪽 여백 - 최상위 부모 기준으로 (상하) 0.5배 (좌우) 1배 지정 
+    2. 1px #ccc 색의 점선 하단만 표시 
+11. `.todo` 안의 `<button>` 
+    1. 안쪽 여백 - 최상위 부모 기준으로 0.5배 지정 
+    2. 바깥 여백 - 최상위 부모 기준으로 0.2배 왼쪽만 지정 
+    3. 폰트 사이즈 - 최상위 부모 기준으로 0.8배 지정 
+    4. 마우스 커서를 올렸을 때 손모양으로 바뀔 수 있게 변경 
+12. `.completed` ([완료] 버튼을 눌렀을 경우 지정될 css) 
+    1. 폰트 색 - #d8d8d8 
+    2. 투명도(`opacity`) - 0.5로 지정 
+    3. 글자 중간에 줄이 그어지도록 `text-decoration` 이용하여 지정 */

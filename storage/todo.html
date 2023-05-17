@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="css/todo_result.css">
+</head>
+
+<body>
+    <header>
+        <h1>오늘의 할 일</h1>
+    </header>
+
+    <form>
+        <label for="todo_input">할 일 </label>
+        <input type="text" id="todo_input" placeholder="할 일을 입력하세요" required autocomplete="off">
+        <button id="add_button">추가</button>
+
+    </form>
+
+    <div id="container">
+        <ul id="todo_list"></ul>
+    </div>
+
+    <script src="js/todo_result2.js"></script>
+</body>
+
+</html>
+
+<!--
+    <html>
+1. `<h1>` 태그로 제목 지정 - 기입 내용 ‘오늘의 할 일’
+2. `<h1>` 태그를 감싸는 헤더 시맨틱 태그로 생성
+3. `<form>` 태그로 할 일을 입력할 `<input>` 텍스트 필드와 [추가] 버튼 만들어 주기
+    1. `<input>` 태그 `<label>` 태그로 연결
+    2. `<input>` 태그 id는 `todo_input`
+    3. [추가] 버튼 id는 `add_button`
+4. 사용자가 입력한 목록 내용을 감싸고 있는 `#container`와 목록 나타낼 부분 만들어 주기
+    1. 목록의 id는 `todo_list` -->

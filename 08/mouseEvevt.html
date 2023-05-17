@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pageX, pageY 이용하여 마우스 이벤트 클릭 위치 알아내기</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>사각형의 내부를 클릭해 보세요!</p>
+    <div id="box"></div>
+
+    <script>
+        const box = document.querySelector('#box');
+        console.log(box);
+
+        box.addEventListener("click", (e) => {
+            alert(`이벤트 발생 위치는 : ${e.pageX}, ${e.pageY}`);
+        })
+
+        //마우스 오른쪽 버튼 비활성화
+        // 
+        window.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            alert('오른쪽 버튼을 사용할 수 없습니다.');
+        })
+
+    </script>
+
+</body>
+
+</html>

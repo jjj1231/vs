@@ -1,0 +1,67 @@
+#container {
+    width: 600px;
+    margin: 0 auto;
+    /* 가로 값만 줌, 세로 값은 자동으로 늘어나게 */
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 2;
+    /* 줄 간격 : 2 */
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    /* 가로 정렬 row */
+    justify-content: left;
+    /* 주축 정렬 (수평 정렬) */
+    align-items: center;
+    /* 교차축 정렬 아이템이 한 줄 일 때 수직 정렬 */
+    /* 둘 다 요소 사이의 공간을 어떻게 분배할 지 방식을 정하는 것이다*/
+    gap: 15px;
+    /* 여백, flex가 있어도 사용 가능 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+#top ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+li>b {
+    width: 70px;
+    float: left;
+    /* li안에 있는 b */
+}
+
+#view {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    /* cursor : pointer 포인터가 손가락 모양으로 바뀜 */
+}
+
+.hidden {
+    display: none;
+    /* 버튼을 눌러야 상세 내용이 보일 수 있게 */
+}

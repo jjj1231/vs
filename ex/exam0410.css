@@ -1,0 +1,49 @@
+/* - `<body>` css 
+- `<body>` 태그 안의 요소들이 컬럼을 기준으로 주축,
+- 교차축 중앙 정렬이 될 수 있게 설정 
+- 최소 높이가 창 기준으로 100 */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* - `<input>` css 
+- 가로 넓이가 부모 기준으로 60% 차지 
+- 안쪽 여백 상하 10 / 좌우 5 
+- 선 스타일 - 1px 실선 #ccc
+*/
+#num {
+    width: 60%;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+}
+
+
+/* 
+- `<button>` css 
+- 가로 넓이가 부모 기준으로 32% 차지 
+- 안쪽 여백 상하 8 / 좌우 15 
+- 바깥 여백 왼쪽 5 */
+#numinput {
+    width: 32%;
+    padding: 8px 15px;
+    margin-left: 5px;
+}
+
+/* 
+- 화면에 표시할 결과 내용 css 
+- 바깥 여백 위쪽 30 
+- 가로 넓이 100% 
+- 글자가 중앙에 올 수 있게 정렬하고, 사이즈는 24px
+*/
+#result {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}

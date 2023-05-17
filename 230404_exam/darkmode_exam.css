@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contents {
+    width: 800px;
+    height: 600px;
+    padding: 20px;
+    border: 1px dotted #ccc;
+    border-radius: 15px;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+#toggle_box {
+    position: fixed;
+    top: 5%;
+    right: 3%;
+}
+
+#toggle_box button {
+    padding: 5px 10px;
+    border: 1px solid #222;
+    border-radius: 5px;
+}
+
+.dark {
+    background-color: #222;
+    color: #eee;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="ex230403.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Book List</h1>
+        <form name="top">
+            <div id="bookInfo">
+                <P>
+                    <label for="title">제목</label>
+                    <input type="text" id="title">
+                </P>
+
+                <P>
+                    <label class="reg" for="author">저자</label>
+                    <input type="name" id="author">
+                </P>
+            </div>
+        </form>
+
+        <button type="reset">취소하기</button>
+        <button id="save">저장하기</button>
+
+    </div>
+
+    <div id="bookList" class="hidden">
+        <p>
+            보건교사, 안은영 - 정세랑
+        </p>
+    </div>
+    <script src=" ex230403.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+#toggle_box {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+}
+
+#toggle_box button {
+    padding: 5px 10px;
+    border: 1px solid #222;
+    border-radius: 5px;
+}
+
+#contents {
+    width: 300px;
+    height: 180px;
+    padding: 20px;
+    border: 1px dotted #ccc;
+    border-radius: 4%;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+/* 다크 모드를 위한 style 추가 */
+.dark {
+    background-color: #222;
+    color: #eee;
+}

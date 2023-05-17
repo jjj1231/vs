@@ -1,0 +1,41 @@
+#container {
+    margin: 50px center;
+    padding: 10px 20px;
+    width: 600px;
+}
+
+#top {
+    magin: 40px 0 0;
+}
+
+#bookInfo {
+    font-size: 1em;
+    line-height: 3;
+}
+
+#title {
+    width: 450px;
+    padding: 5px;
+
+}
+
+#author {
+    width: 450px;
+    padding: 5px;
+}
+
+button {
+    margin: 20px 55px;
+    padding: 5px 10px;
+    width: 150px;
+    font-size: 1em;
+}
+
+#bookList {
+    margin: 80px 0 0;
+    width: 500px;
+}
+
+.hidden {
+    display: none;
+}

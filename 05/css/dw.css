@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    /*세로 정렬*/
+}
+
+#container div {
+    margin: 10px
+}

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    margin: 50px auto;
+    width: 600px;
+    padding: 10px 20px;
+
+}
+
+form {
+    margin-top: 40px;
+}
+
+.bookInfo {
+    font-size: 1em;
+    line-height: 3;
+}
+
+.bookInfo label {
+    display: inline-block;
+    width: 50px;
+
+}
+
+.bookInfo input {
+    display: inline-block;
+    width: 450px;
+    padding: 5px;
+}
+
+button {
+    width: 150px;
+    margin: 20px 55px;
+    padding: 5px 10px;
+    font-size: 1em;
+    /* rem -> root, em ->부모 기준 */
+}
+
+ul {
+    list-style: none;
+}
+
+#booklist {
+    width: 500px;
+    padding: 80px;
+
+}
+
+
+#booklist li {
+    font-size: 1em;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    /* 밑선 */
+    position: relative;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+.delButton:hover {
+    cursor: pointer;
+}
+
+
+span {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    position: absolute;
+    right: 10px;
+}

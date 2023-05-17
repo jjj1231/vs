@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버블링</title>
+</head>
+
+<body>
+    <div class="div1">할머니
+        <div class="div2">아빠
+            <div class="div3">나</div>
+        </div>
+    </div>
+
+    <script>
+        const divs = document.querySelectorAll
+            ('div');
+        console.log(divs)
+
+        const clickEvent = (e) => {
+            console.log(e.currentTarget.className);
+        }
+
+        divs.forEach((div) => {
+            div.addEventListener("click", clickEvent);
+
+        })
+    </script>
+</body>
+
+</html>

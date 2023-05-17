@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    /*창을 기준으로 모두 차지*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #639;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px;
+
+}
+
+button.active {
+    /* 버튼이 "활성" 상태일 때 왼쪽으로 110 픽셀 이동하겠다 */
+    transform: translateX(-110px);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #639;
+    height: 100vh;
+    padding: 2em;
+
+    /* 동적 레이아웃을 생성하고 화면에 요소를 이동하는 애니메이션 전환 */
+    /* 전체 너비만큼 수평(오른쪽)으로 이동 */
+    transform: translateX(100%);
+}
+
+nav.active {
+    transform: translateX(0);
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 1em;
+
+}
+
+nav a {
+    color: white;
+    /* 밑줄 없애줌 */
+    text-decoration: none;
+}
